@@ -1,0 +1,38 @@
+
+body img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    
+}
+.header {
+    
+    background-color: rgb(146, 227, 227);
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+} 
+
+.header h1 {
+  margin: 5px 10px 0px 10px ;
+  text-align: center;
+}
+
+.header h2 {
+  text-align: center;
+  margin: 1px 10px 5px 10px;
+}
+
+ul {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight:  100;
+  font-style: normal;
+
+}
+
