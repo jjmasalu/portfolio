@@ -1,11 +1,10 @@
 
 body img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
+    height: 75px;
     border-radius: 50%;
-    margin: auto;
+    padding: 5px;
+    border: 1px;
+    margin: 5px;
     
 }
 .header {
@@ -15,17 +14,21 @@ body img {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    
+    display: flex;
+    --contain: content;
 } 
 
-.header h1 {
+.header .profile-name h1 {
   margin: 5px 10px 0px 10px ;
-  text-align: center;
+  text-align: left;
+  font-size: 1.7rem;
 }
 
-.header h2 {
-  text-align: center;
+.header .profile-name h2 {
+  text-align: left;
   margin: 1px 10px 5px 10px;
+  font-size: 0.6rem;
+  position: relative;
 }
 
 ul {
@@ -36,3 +39,33 @@ ul {
 
 }
 
+.menu-items {
+    justify-content: right;
+    position: absolute;
+    right: 5%;
+}
+
+.menu-items ul{
+    display: inline-flex;
+
+}
+
+.menu-items ul li {
+    border: 1px;
+    padding: 3px;
+    margin: 1px;
+    list-style: none;
+    font-family: serif;
+}
+
+.menu-items ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 600px) {
+  .menu-items ul{
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
