@@ -40,17 +40,20 @@ ul {
 }
 
 .menu-items {
-    justify-content: right;
     position: absolute;
     right: 5%;
 }
 
-.menu-items ul{
+.menu-items-list {
     display: inline-flex;
 
 }
 
-.menu-items ul li {
+.menu-items-toggle {
+  display: none;
+}
+
+.menu-items-list li {
     border: 1px;
     padding: 3px;
     margin: 1px;
@@ -58,14 +61,30 @@ ul {
     font-family: serif;
 }
 
-.menu-items ul li a {
+.menu-items-list li a {
     text-decoration: none;
     color: black;
 }
 
-@media (max-width: 600px) {
-  .menu-items ul{
-    display: inline-flex;
+@media (max-width: 700px) {
+
+  .menu-items-list {
+    display: none;
     flex-direction: column;
+    background-color:gray;
+    border-radius: 5%;
+    margin: 5%;
+    padding: 5%;
+    
+  }
+
+  .menu-items-list.show {
+    display: inline-flex;
+  }
+
+  .menu-items-toggle {
+    display: block;
+    cursor: pointer;
+    margin-top: 20%;
   }
 }
