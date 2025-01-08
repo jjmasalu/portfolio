@@ -4,27 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../style.css" />
 
     <style>
       body {
         display: flex;
-        color: rgb(255, 255, 255);
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
       }
 
       .content {
-        background-color: rgb(99, 98, 89);
-        padding: 10px;
-        margin: auto;
-        border-radius: 1%;
+        margin-left: 100px;
       }
-      h1 {
-        font-size: larger;
-        text-align: center;
+
+      body > * {
+        flex-shrink: 0;
+      }
+
+      .back-image img {
+        height: 100vh;
       }
     </style>
   </head>
   <body>
-    <div class="content">
+    <div class="content card">
       <h1>About Me</h1>
       <p>
         I am a fourth-year Computer Science and Applied Mathematics student at
@@ -38,10 +42,15 @@
         everything about the sport. Looking ahead, I aspire to give back to my
         community by using my knowledge and influence to ensure that youth have
         access to better education and support in pursuing their dreams. Growing
-        up, I often felt the lack of consistent support, and I am driven to be
-        the change I wish to see. By empowering the next generation, I hope to
-        create a positive, lasting impact in my community.
+        up, I often felt the lack of consistent guidance towards a specific
+        goal, and I am driven to be the change I wish to see. By empowering the
+        next generation, I hope to create a positive, lasting impact in my
+        community.
       </p>
+    </div>
+
+    <div class="back-image">
+      <img src="../assets/images/me.png" alt="my-picture" />
     </div>
   </body>
 </html>
