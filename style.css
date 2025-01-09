@@ -13,7 +13,7 @@ footer {
   
 }
  footer > * {
-  width: 1240px;
+  width: 100%;
   background-color: rgb(146, 227, 227);
   
  }
@@ -158,6 +158,23 @@ ul {
     cursor: pointer;
     margin-top: 20%;
   }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  footer > * {
+    width: 100%;
+    background-color: rgb(146, 227, 227);
+    
+   }
 }
 
 
