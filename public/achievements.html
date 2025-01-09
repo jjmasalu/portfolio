@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        font-size: larger;
+      }
+
+      .content {
+        background-color: rgb(146, 227, 227);
+        padding: 10px;
+        margin: auto;
+        border-radius: 1%;
+        height: 100vh;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 600px 600px 600px;
+        grid-template-rows: 400px 400px 400px;
+        gap: 5px;
+      }
+
+      .container > * {
+        padding: 5px;
+        margin: 10px;
+        background-color: beige;
+      }
+
+      .container object {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>My Achievements</h1>
+      <div class="container">
+        <div class="masterschool">
+          <object
+            data="../assets/documents/Masterschool-certificate (1).pdf"
+            type="application/pdf"
+          >
+            <p>
+              Data Analytics Certificate.
+              <a href="../assets/documents/Masterschool-certificate (1).pdf"
+                >Download pdf</a
+              >
+            </p>
+          </object>
+        </div>
+        <div class="deans-list"><p></p></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </body>
+</html>
