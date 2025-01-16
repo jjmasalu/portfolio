@@ -11,64 +11,190 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div class="header">
-      <div class="title">
-        <div class="profile-pic">
-          <img src="./assets/images/jjmasalu.jpg" alt="This is me" />
+    <div class="all-content">
+      <div class="navbar-container">
+        <div class="navbar">
+          <div class="name">
+            <h3>Jonathan</h3>
+          </div>
+          <div class="menu">
+            <div class="menu-list">
+              <ul>
+                <li><a class="home" href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="https://github.com/">PROJECTS</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="profile-name">
+      <div class="body-container">
+        <div class="body-item title">
           <h1>Jonathan Masalu</h1>
-          <h2>Student| web developer | Data analyst</h2>
-          <hr />
+          <p>Student | Software Developer | Data analyst</p>
+        </div>
+        <div class="body-item picture">
+          <img src="./assets/images/Subject (2).png" alt="" />
+        </div>
+        <div class="body-item about mb-5">
+          <p>
+            Hi, Welcome to my page. I am a Computer Science and Applied
+            Mathematics student at Memorial University of Newfoundland, with a
+            strong enthusiasm for data science and web development. Passionate
+            about connecting with like-minded individuals, I enjoy discussing
+            technology, tackling societal challenges, and having fun along the
+            way. i am also a BIG lover of the game(Where are all my Chelsea fans
+            at), playing, watching, and immersing myself in everything about the
+            sport. I aspire to give back to my community by using my knowledge
+            and influence to ensure that youth have access to better education
+            and support in pursuing their dreams. Don't stop Dreaming.
+          </p>
         </div>
       </div>
 
-      <div class="menu-items">
-        <ul class="menu-items-list">
-          <li><a href="#">About</a></li>
-          <li>
-            <a href="#">projects</a>
-          </li>
-          <li><a href="./public/achievements.html">Achievements</a></li>
-          <li><a href="https://github.com/jjmasalu">Github</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/jonathan-masalu-b4a057217/"
-              >LinkedIn</a
-            >
-          </li>
-        </ul>
-        <button class="menu-items-toggle">=</button>
-      </div>
-    </div>
+      <!--projects section-->
+      <section class="projects">
+        <div class="project-head bg-body-white text-center mt-0 mb-0"><h1>My Projects</h1></div>
+        <div class="album py-5 bg-body-black">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2">Youtube Text Analysis</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-youtube " viewBox="-5 0 21 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement. By leveraging various data analysis techniques, I aim to uncover patterns and trends in user behavior and preferences.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="youtubeProject"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
 
-    <div class="container">
-      <div class="lifestyle card medium-font">
-        <ul>
-          <li>
-            <a href="./public/movie-ranking.html">My top Movie rankings</a>
-          </li>
-          <li>
-            <a href="./public/birthday.html">My upcoming Birthday Invite</a>
-          </li>
-        </ul>
-      </div>
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2 p-3">Portfolio Website</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-person-circle mt-3 mb-3" viewBox="-5 0 21 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project is where you are :)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="portfolio"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
 
-      <div class="projects card"></div>
-      <div class="card"></div>
-    </div>
-  </body>
-  <footer>
-    <button>
-      <a href="./public/about.html">About me</a>
-    </button>
-    <button>
-      <a href="./public/contact.html">Contact me</a>
-    </button>
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2">Youtube Text Analysis</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-youtube " viewBox="-5 0 21 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement. By leveraging various data analysis techniques, I aim to uncover patterns and trends in user behavior and preferences.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="youtubeProject"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
 
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2">Youtube Text Analysis</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-youtube " viewBox="-5 0 21 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement. By leveraging various data analysis techniques, I aim to uncover patterns and trends in user behavior and preferences.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="youtubeProject"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2">Youtube Text Analysis</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-youtube " viewBox="-5 0 21 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement. By leveraging various data analysis techniques, I aim to uncover patterns and trends in user behavior and preferences.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="youtubeProject"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm border-black">
+                  <div class="card-head text-center bg-black text-light"><h1 class="m-2">Youtube Text Analysis</h1></div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" fill="currentColor" class="bi bi-youtube " viewBox="-5 0 21 16">
+                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                  </svg>
+                  <div class="card-body text-white bg-black">
+                    <p class="card-text">This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement. By leveraging various data analysis techniques, I aim to uncover patterns and trends in user behavior and preferences.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button id="youtubeProject"
+                        type="button" 
+                        class="btn btn-sm btn-outline-light">View</button>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+        <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-  </footer>
+  </body>
 </html>

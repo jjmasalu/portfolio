@@ -1,8 +1,9 @@
 
+document.getElementById('youtubeProject').onclick = function () {
+    window.location.href = "https://github.com/jjmasalu/Youtube-Text-analysis"
+}
 
-const toggleButton = document.querySelector('.menu-items-toggle');
-const menuItemsList = document.querySelector('.menu-items-list');
 
-toggleButton.addEventListener('click', () => {
-    menuItemsList.classList.toggle('show');
-});
+document.getElementById('portfolio').onclick = function () {
+    window.location.href = "https://github.com/jjmasalu/portfolio"
+}
