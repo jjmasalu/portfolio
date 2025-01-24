@@ -35,7 +35,7 @@ body {
 }
 
 
-.navbar-container .navbar .menu .menu-list ul{
+.navbar-container .navbar .menu .menu-list .nav-links {
   list-style: none;
   display: inline-flex;
   gap: 15px;
@@ -46,6 +46,15 @@ body {
 .navbar-container .navbar .menu .menu-list ul li a  {
   color: white;
   text-decoration: none;
+}
+
+.toggle-btn {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .home{
@@ -113,6 +122,8 @@ body {
 }
 
 
+
+
 /* Mobile Design */
 @media (max-width: 768px) {
   body {
@@ -139,12 +150,28 @@ body {
   }
   
 
-  .navbar-container .navbar .menu .menu-list ul {
-    flex-direction: row;
-    gap: 10px;
+  .navbar-container .navbar .menu .menu-list .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 120px;
+    padding: 1rem;
+    border-radius: 0 0 8px 8px;
   }
 
-  .navbar-container .navbar .menu .menu-list ul li {
+  .navbar-container .navbar .menu .menu-list .nav-links.active {
+    display:flex;
+  }
+
+  .btn .toggle-btn {
+    display: block;
+  }
+
+  .navbar-container .navbar .menu .menu-list .nav-links li {
     text-align: center;
   }
 

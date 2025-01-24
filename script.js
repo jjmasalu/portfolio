@@ -1,9 +1,7 @@
 
-document.getElementById('youtubeProject').onclick = function () {
-    window.location.href = "https://github.com/jjmasalu/Youtube-Text-analysis"
-}
+const toggleBtn = document.getElementById('toggle-btn');
+const navLinks = document.getElementById('nav-links');
 
-
-document.getElementById('portfolio').onclick = function () {
-    window.location.href = "https://github.com/jjmasalu/portfolio"
-}
+toggleBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
