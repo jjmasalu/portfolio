@@ -1,3 +1,3 @@
 # portfolio
-This project is under construction :)
+This is my personal portfolio website where I showcase my projects.
 run this page here https://jjmasalu.github.io/portfolio/
