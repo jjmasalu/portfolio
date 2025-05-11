@@ -1,0 +1,142 @@
+/* Base reset and font settings */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 40px;
+  }
+  
+  /* Header and contact info */
+  header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info {
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  /* Section spacing */
+  section {
+    margin-bottom: 12px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  
+  h2 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 2px;
+  }
+  
+  h3 {
+    font-size: 13px;
+    margin: 4px 0;
+  }
+  
+  .date {
+    float: right;
+    font-weight: normal;
+    font-size: 11px;
+  }
+  
+  .subheading {
+    float: left;
+    font-weight: normal;
+    font-size: 11px;
+  }
+  
+  ul {
+    margin: 4px 0 10px 18px;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 4px;
+  }
+  
+  /* Skills section */
+  .skills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .skills li {
+    margin-bottom: 6px;
+  }
+  
+  /* Projects */
+  .project p,
+  .job p,
+  .education p {
+    margin: 2px 0;
+  }
+  
+  .contact-info a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline !important;
+  }
+  
+  
+  /* Print optimization */
+  @media print {
+    body {
+      font-size: 11px;
+    }
+  
+    .container {
+      padding: 10px 20px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    h2 {
+      font-size: 14px;
+    }
+  
+    h3 {
+      font-size: 12px;
+    }
+  
+    .date, .sub-heading {
+      font-size: 10px;
+    }
+  
+    ul li {
+      margin-bottom: 2px;
+    }
+  
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  
+    .contact-info {
+      font-size: 10px;
+      gap: 4px;
+    }
+  }
+  

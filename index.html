@@ -36,6 +36,7 @@
                 <li><a href="#aboutMe">ABOUT-ME</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="https://github.com/">GITHUB</a></li>
+                <li><a href="./assets/resume/index.html">RESUME</a></li>
               </ul>
             </div>
             <div class="btn">
@@ -55,7 +56,7 @@
           <img class="rounded" src="./assets/images/Subject (2).png" alt="my-pic" />
         </div>
         <div id="aboutMe" class="body-item about mb-5">
-          <h1>Hello</h1>
+          <h1>Hello!</h1>
           <p>
             I am a Computer Science and Applied
             Maths student. I enjoy discussing
@@ -67,60 +68,101 @@
       </div>
 
       <!--projects section-->
-      <section class="projects">
-        <div id="projects" class="project-head bg-body-white text-center mt-0 mb-0"><h1>My Projects</h1></div>
-        <div class="container mb-3">
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-current="true" aria-label="Slide 4"></button>
+      <section class="projects py-5 bg-light">
+        <div class="container">
+          <h1 class="text-center mb-4" id="projects">My Projects</h1>
+          <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://jjmasalu.github.io/expense-tracker/" target="_blank">
+                  <img src="./assets/images/Expense tracker.png" class="card-img-top" alt="YouTube Analysis">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Expense Tracker</h5>
+                  <p><span>HTML, CSS, JavaScript, and React</span></p>
+                  <p class="card-text">A React app to manage income and expenses. Track your balance, add/delete transactions, and filter your financial activity.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://jjmasalu.github.io/notememo/" target="_blank">
+                  <img src="./assets/images/notememo.png" class="card-img-top" alt="YouTube Analysis">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">notememo App</h5>
+                  <p><span>HTML, CSS, JavaScript, and React</span></p>
+                  <p class="card-text">A note-taking application built with React. Users can add and display notes easily using a clean and responsive UI.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://github.com/jjmasalu/portfolio" target="_blank">
+                  <img src="./assets/images/Professional-portfolio-736x414.webp" class="card-img-top" alt="Portfolio">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Website</h5>
+                  <p><span>HTML, CSS, and Bootstrap</span></p>
+                  <p class="card-text">You're viewing it! This responsive website highlights my background, skills, and projects.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://github.com/jjmasalu/snake_game" target="_blank">
+                  <img src="./assets/images/google-snake-game.jpg" class="card-img-top" alt="Snake Game">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">Snake & Apple Game</h5>
+                  <p><span>Python, Pygame</span></p>
+                  <p class="card-text">Classic Snake Game implemented in Python using the Pygame library.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://github.com/jjmasalu/Youtube-Text-analysis" target="_blank">
+                  <img src="./assets/images/bhautik-patel-RiOBIDBYjsA-unsplash.jpg" class="card-img-top" alt="YouTube Analysis">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">YouTube Text Analysis</h5>
+                  <p><span>Python, NLP, Pandas, Matplotlib, NumPy, Plotly</span></p>
+                  <p class="card-text">Analyzed YouTube comments with sentiment analysis, emoji breakdowns, and viewer engagement metrics.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+      
+            <div class="col-md-6 col-lg-4">
+              <div class="card h-100 shadow-sm">
+                <a href="https://github.com/jjmasalu/Time-Series-Analysis" target="_blank">
+                  <img src="./assets/images/The-SP-500-index-1068x601.jpg" class="card-img-top" alt="S&P 500">
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title">S&P 500 Time Series</h5>
+                  <p><span>Python, Pandas, Matplotlib, NumPy, and Tableau</span></p>
+                  <p class="card-text">Time series analysis of Apple, Amazon, Microsoft, and Google stock prices.</p>
+                </div>
+              </div>
+            </div>
+      
+            
+      
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <a href="https://github.com/jjmasalu/Youtube-Text-analysis"><img src="./assets/images/bhautik-patel-RiOBIDBYjsA-unsplash.jpg" class="d-block w-100" alt="..."></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Youtube Text Analysis</h5>
-                <p>This project focuses on analyzing YouTube comments to extract valuable insights. The analysis includes data cleaning, sentiment analysis, word cloud generation, emoji analysis, and evaluating audience engagement.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://github.com/jjmasalu/snake_game"><img src="./assets/images/google-snake-game.jpg" class="d-block w-100" alt="..."></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Snake&Apple</h5>
-                <p>This is a classic Snake Game implemented in Python using the pygame library.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <a href="https://github.com/jjmasalu/Time-Series-Analysis"><img src="./assets/images/The-SP-500-index-1068x601.jpg" class="d-block w-100" alt="..."></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Time Series Analysis (S&P 500)</h5>
-                <p>This project explores the time series analysis of the S&P 500 index, with a detailed focus on four major companies: Apple (AAPL), Amazon (AMZN), Microsoft (MSFT), and Google (GOOG).</p>
-              </div>
-            </div>
-            <div id="portfolio" class="carousel-item">
-              <a href="https://github.com/jjmasalu/portfolio"><img src="./assets/images/Professional-portfolio-736x414.webp" class="d-block w-100" alt="..."></a>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Portfolio Website</h5>
-                <p>This is where you are. Click image for source code.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-      </div>
       </section>
       
+      
       <section>
-        <div class="container text-center bg-black pb-4">
+        <div class="container text-center bg pb-4 mt-4">
           <h1>Connect with me</h1>
             <p>If you like soccer as much as I do</p>
           <div class="row">
